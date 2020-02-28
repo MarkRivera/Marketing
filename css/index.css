@@ -308,11 +308,15 @@ template {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 .nav {
   font-size: 1.8rem;
   display: flex;
   flex-flow: column;
+  padding-bottom: 1.6rem;
+  background-color: #EDF2F4;
+  box-shadow: 2px 2px 15px #BABABA;
 }
 .nav .nav-features {
   display: flex;
@@ -337,4 +341,44 @@ html {
 }
 .nav .active {
   display: block;
+}
+.page-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.page-info .headline-container {
+  margin-top: 4rem;
+}
+.page-info .headline-container .top {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.page-info .headline-container .top small {
+  font-size: 1.2rem;
+}
+.page-info .headline-container .headline {
+  font-size: 3.4rem;
+  text-align: center;
+}
+.page-info .headline-container .btn-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.page-info .headline-container .btn-container .cta-btn {
+  width: 100%;
+  height: 4.8rem;
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+  background-color: #EDF2F4;
+  border: 2px solid #235789;
+  color: #235789;
+  font-weight: bolder;
+}
+.page-info .headline-container .btn-container .cta-btn:first-child {
+  background-color: #235789;
+  color: #EDF2F4;
 }
