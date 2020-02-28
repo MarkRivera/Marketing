@@ -1,0 +1,85 @@
+.nav {
+    font-size: 1.8rem;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 1.6rem;
+    background-color: @primary-color;
+    box-shadow: 2px 2px 15px #BABABA;
+ 
+    & .nav-features {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.6rem 1.6rem 0;
+    }
+ 
+     & .logo {
+         text-decoration: none;
+     }
+ 
+     & .main-nav {
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         display: none;
+ 
+         & li {
+             text-align: center;
+             margin: 0 auto;
+             
+             & a {
+                .flex();
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                padding: 2.0rem 0;
+                color: @secondary-color;
+             }
+
+             &:last-child {
+                    .cta-btn(@secondary-color, @primary-color);
+                    width: 95%;
+                    margin: 0 auto;
+                   
+
+                    & a {
+                        .flex();
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                        padding: 2.0rem;
+                        color: @primary-color;
+                    }
+             }
+         }
+ 
+         & .nav-link {
+             text-decoration: none;
+         }
+
+     }
+ 
+     .active {
+         display: block;
+     }
+     // & .nav-link {
+     //     width: 30%;
+     //     height: 4.8rem;
+     //     text-decoration: none;
+     //     font-size: 2.5rem;
+     //     text-align: center;
+     //     line-height: 4.8rem;
+     //     background-color: @primary-color;
+     //     color: @secondary-color;
+     //     border: 2px solid @secondary-color;
+         
+ 
+     //     &:last-child {
+     //         background-color: @secondary-color;
+     //         color: @primary-color;
+     //     }
+     // }
+ }
