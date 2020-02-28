@@ -24,12 +24,42 @@
  
          & li {
              text-align: center;
-             margin: 1.6rem auto;
+             margin: 0 auto;
+             
+             & a {
+                .flex();
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                padding: 2.0rem 0;
+                color: @secondary-color;
+             }
+
+             &:last-child {
+                    .cta-btn(@secondary-color, @primary-color);
+                    width: 95%;
+                    margin: 0 auto;
+                   
+
+                    & a {
+                        .flex();
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                        padding: 2.0rem;
+                        color: @primary-color;
+                    }
+             }
          }
  
          & .nav-link {
              text-decoration: none;
          }
+
      }
  
      .active {
