@@ -100,3 +100,23 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .about {
+        & .info {
+            & h1 {
+                &::after {
+                    width: 20.0rem;
+                }
+            }
+
+            & p {
+                padding: 0 10.0rem;
+            }
+
+            & button {
+                width: 25%;
+            }
+        }
+    }
+}
